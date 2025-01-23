@@ -49,9 +49,6 @@ jobs:
       - name: Download libuci20130104 ipk
         run: wget https://downloads.openwrt.org/releases/packages-23.05/aarch64_cortex-a72/base/libuci20130104_2023-08-10-5781664d-1_aarch64_cortex-a72.ipk -O libuci20130104.ipk
 
-      - name: Install libuci20130104 ipk
-        run: opkg install libuci20130104.ipk
-
       - name: Build sunxi-cortexa53 ImmpotalWrt 24.10
         run: |
           profiles="${{ github.event.inputs.profile }}"
